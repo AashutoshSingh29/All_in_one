@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>OOPs Concept</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+    <link rel="stylesheet" href="mycss.css">
 </head>
 
 <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
@@ -32,9 +36,7 @@
 
         <br><br><br>
         <h3>Select Your Topic !😉</h3>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-            crossorigin="anonymous"></script>
+
 
 
 
@@ -73,34 +75,40 @@
 
     <!--  Classes and Objects -->
 
-    <div style="position:relative; left: 20px; width: 600px;">
-
-        <h4> Classes and Objects</h4>
-        <div style="position:relative">
-            <ul>
-                <li>
-                    The collection of objects that share common properties and behavior is called class.
-                </li>
-                <li>
-                    A class can also be defined as a blueprint from which you can create an individual object.
-                </li>
-                <li>
-                    A class that is derived from another class is called a subclass.
-                </li>
-                <li>
-                    The class from which the subclass is derived is called a superclass.
-                </li>
-                <li>
-                    Class doesn't consume any space.
-                </li>
-                <li>
-                    It is a logical entity.
-                </li>
-            </ul>
+    <div class="row" style="position:relative; left: 20px; ">
 
 
-            <!-- <div style="position:relative; left:20px;"> -->
-            <pre style="background-color: #eee; border: 1px solid #999; display:block;padding: 5px; ">
+        <div class="column left">
+
+        </div>
+        <div class="column right">
+            <section class="ibpage__details col-sm-9">
+                <h4> Classes and Objects</h4>
+                <div style="position:relative">
+                    <ul>
+                        <li>
+                            The collection of objects that share common properties and behavior is called class.
+                        </li>
+                        <li>
+                            A class can also be defined as a blueprint from which you can create an individual object.
+                        </li>
+                        <li>
+                            A class that is derived from another class is called a subclass.
+                        </li>
+                        <li>
+                            The class from which the subclass is derived is called a superclass.
+                        </li>
+                        <li>
+                            Class doesn't consume any space.
+                        </li>
+                        <li>
+                            It is a logical entity.
+                        </li>
+                    </ul>
+
+
+                    <!-- <div style="position:relative; left:20px;"> -->
+                    <pre style="background-color: #eee; border: 1px solid #999; display:block;padding: 5px; ">
 
             <code>public class Dog <span style="color: purple;"> // Class created</span>
                 {
@@ -110,27 +118,28 @@
                         void barking () {} <span style="color: purple;"> // method created</span>
                 }</code>
             </pre>
-            <!-- </div> -->
+                    <!-- </div> -->
 
 
 
-            <h4>Objects</h4>
-            <ul>
-                <li>
-                    An object is a self-contained component that consists of methods and properties to make a particular
-                    type of data useful.
-                </li>
-                <li>
-                    An object is an instance of a class.
-                    <ul style="list-style-type:square ;">
+                    <h4>Objects</h4>
+                    <ul>
                         <li>
-                            ClassName ObjectName = new ClassName();
+                            An object is a self-contained component that consists of methods and properties to make a
+                            particular
+                            type of data useful.
+                        </li>
+                        <li>
+                            An object is an instance of a class.
+                            <ul style="list-style-type:square ;">
+                                <li>
+                                    ClassName ObjectName = new ClassName();
+                                </li>
+                            </ul>
                         </li>
                     </ul>
-                </li>
-            </ul>
-            <!-- <div style="position:relative; left:20px;"> -->
-            <pre style="background-color: #eee; border: 1px solid #999; display:block;padding: 5px; ">
+                    <!-- <div style="position:relative; left:20px;"> -->
+                    <pre style="background-color: #eee; border: 1px solid #999; display:block;padding: 5px; ">
 
             <code>public static void main(String [] args)
                 {
@@ -138,39 +147,40 @@
                     d.barking();       <span style="color: purple;"> // object called</span>
                 }</code>
             </pre>
-            <!-- </div> -->
+                    <!-- </div> -->
 
 
 
-        </div>
-
-
-
-
+                </div>
 
 
 
 
-        <!-- Inheritance -->
 
-        <h4>Inheritance</h4>
-        <ul>
-            <li>
-                Inheritance is the ability to access or derive one class from another existing class.
-            </li>
-            <li>
-                The Base class is also called a parent or superclass & the derived class is called a child class or
-                subclass.
-            </li>
-            <li>
-                Inheritance is achieved by using Extends keyword.
-            </li>
-            <li>
-                It helps in code reuse and more Simple implementation.
-            </li>
-        </ul>
 
-        <pre style="background-color: #eee; border: 1px solid #999; display:block;padding: 5px; ">
+
+
+                <!-- Inheritance -->
+
+                <h4>Inheritance</h4>
+                <ul>
+                    <li>
+                        Inheritance is the ability to access or derive one class from another existing class.
+                    </li>
+                    <li>
+                        The Base class is also called a parent or superclass & the derived class is called a child class
+                        or
+                        subclass.
+                    </li>
+                    <li>
+                        Inheritance is achieved by using Extends keyword.
+                    </li>
+                    <li>
+                        It helps in code reuse and more Simple implementation.
+                    </li>
+                </ul>
+
+                <pre style="background-color: #eee; border: 1px solid #999; display:block;padding: 5px; ">
             <code>
                 class Subclass-name extends Superclass-name  
                     {  
@@ -179,62 +189,62 @@
             </code>
         </pre>
 
-        <h5>Types of Inheritance :</h5>
-        <ol>
-            <li>
-                Single
-            </li>
-            <li>
-                Multi-level
-            </li>
+                <h5>Types of Inheritance :</h5>
+                <ol>
+                    <li>
+                        Single
+                    </li>
+                    <li>
+                        Multi-level
+                    </li>
 
-            <li>
-                Hierarchical
-            </li>
+                    <li>
+                        Hierarchical
+                    </li>
 
-            <li>
-                Multiple
-            </li>
-            <li>
-                Hybrid
-            </li>
-        </ol>
+                    <li>
+                        Multiple
+                    </li>
+                    <li>
+                        Hybrid
+                    </li>
+                </ol>
 
 
-        <h6> <b>&rarr; </b> Single Inheritance</h6>
-        <ul>
-            <li>
-                When one class inherits another class it is called single inheritance.
-            </li>
-        </ul>
-        <pre style="background-color: #eee; border: 1px solid #999; display:block;padding: 5px; ">
+                <h6> <b>&rarr; </b> Single Inheritance</h6>
+                <ul>
+                    <li>
+                        When one class inherits another class it is called single inheritance.
+                    </li>
+                </ul>
+                <pre style="background-color: #eee; border: 1px solid #999; display:block;padding: 5px; ">
             <code>
                 class <span style="color: rgb(4, 1, 72);"> Animal</span>{  
                     void eat()
                     {
-                        <span style="color: purple;"> System.out.println("eating...");</span>
+                        <span style="color: rgb(0, 0, 0);"> System.out.println("eating...");</span>
                     }  
                             }  
                     class Dog extends Animal
                         {  
                             void bark()
                             {
-                                <span style="color: purple;">System.out.println("barking...");</span>    
+                                <span style="color: rgb(0, 0, 0);">System.out.println("barking...");</span>    
                             }  
                         } 
                     
             </code>
         </pre>
 
-        <h6> <b>&rarr; </b> Multilevel Inheritance</h6>
-        <ul>
-            <li>
-                When Inheritance is done in a chain it is called multilevel inheritance.
-                Like class C is derived from class B and class B is derived from class A.
+                <h6> <b>&rarr; </b> Multilevel Inheritance</h6>
+                <ul>
+                    <li>
+                        When Inheritance is done in a chain it is called multilevel inheritance.
+                        Like class C is derived from class B and class B is derived from class A.
 
-            </li>
-        </ul>
-        <pre style="background-color: #eee; border: 1px solid #999; display:block;padding: 5px;">
+                    </li>
+                </ul>
+                <pre style="background-color: #eee; border: 1px solid #999; display:block;padding: 5px;">
             <code>
                 class Animal{  
                     void eat(){
@@ -251,13 +261,13 @@
             </code>
         </pre>
 
-        <h6> <b>&rarr; </b> Hierarchical Inheritance</h6>
-        <ul>
-            <li>
-                When two or more classes inherit from one class it’s called Hierarchical Inheritance.
-            </li>
-        </ul>
-        <pre style="background-color: #eee; border: 1px solid #999; display:block;padding: 5px;">
+                <h6> <b>&rarr; </b> Hierarchical Inheritance</h6>
+                <ul>
+                    <li>
+                        When two or more classes inherit from one class it’s called Hierarchical Inheritance.
+                    </li>
+                </ul>
+                <pre style="background-color: #eee; border: 1px solid #999; display:block;padding: 5px;">
             <code>
                 class Animal{  
                     void eat(){
@@ -273,26 +283,27 @@
                     } }                                    
             </code>
         </pre>
-        <h6> <b>&rarr; </b> Multiple Inheritance</h6>
-        <ul>
-            <li>
-                To reduce the complexity and simplify the language, multiple inheritance is not supported in java.
-            </li>
-            <li>
-                If we try to do so it will give compile time error.
-            </li>
-            <li>
-                It can be achieved by using interfaces.
-                <!-- I have to give link to interface -->
-            </li>
-        </ul>
-        <h6> <b>&rarr; </b> Hybrid Inheritance</h6>
-        <ul>
-            <li>
-                Hybrid inheritance is a combination of two or more types of inheritances.
-            </li>
-        </ul>
-
+                <h6> <b>&rarr; </b> Multiple Inheritance</h6>
+                <ul>
+                    <li>
+                        To reduce the complexity and simplify the language, multiple inheritance is not supported in
+                        java.
+                    </li>
+                    <li>
+                        If we try to do so it will give compile time error.
+                    </li>
+                    <li>
+                        It can be achieved by using interfaces.
+                        <!-- I have to give link to interface -->
+                    </li>
+                </ul>
+                <h6> <b>&rarr; </b> Hybrid Inheritance</h6>
+                <ul>
+                    <li>
+                        Hybrid inheritance is a combination of two or more types of inheritances.
+                    </li>
+                </ul>
+        </div>
 
 
 
@@ -318,7 +329,7 @@
         <!-- Overloading and Overriding -->
 
 
-
+        </section>
     </div>
 
 </body>
