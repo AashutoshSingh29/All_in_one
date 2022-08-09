@@ -110,7 +110,7 @@
                     <!-- <div style="position:relative; left:20px;"> -->
                     <pre style="background-color: #eee; border: 1px solid #999; display:block;padding: 5px; ">
 
-            <code>public class Dog <span style="color: purple;"> // Class created</span>
+            <code style="color:rgb(11, 11, 127) ;">public class Dog <span style="color: purple;"> // Class created</span>
                 {
                     String breed;
                     int Age;
@@ -141,7 +141,7 @@
                     <!-- <div style="position:relative; left:20px;"> -->
                     <pre style="background-color: #eee; border: 1px solid #999; display:block;padding: 5px; ">
 
-            <code>public static void main(String [] args)
+            <code style="color:rgb(11, 11, 127) ;">public static void main(String [] args)
                 {
                     Dog d = new Dog();  <span style="color: purple;"> // object created</span>
                     d.barking();       <span style="color: purple;"> // object called</span>
@@ -181,7 +181,7 @@
                 </ul>
 
                 <pre style="background-color: #eee; border: 1px solid #999; display:block;padding: 5px; ">
-            <code>
+            <code style="color:rgb(11, 11, 127) ;">
                 class Subclass-name extends Superclass-name  
                     {  
                         <span style="color: purple;"> //methods and fields</span>   
@@ -218,7 +218,7 @@
                     </li>
                 </ul>
                 <pre style="background-color: #eee; border: 1px solid #999; display:block;padding: 5px; ">
-            <code>
+            <code style="color:rgb(11, 11, 127) ;">
                 class <span style="color: rgb(4, 1, 72);"> Animal</span>{  
                     void eat()
                     {
@@ -245,7 +245,7 @@
                     </li>
                 </ul>
                 <pre style="background-color: #eee; border: 1px solid #999; display:block;padding: 5px;">
-            <code>
+            <code style="color:rgb(11, 11, 127) ;">
                 class Animal{  
                     void eat(){
                         System.out.println("eating...");
@@ -268,7 +268,7 @@
                     </li>
                 </ul>
                 <pre style="background-color: #eee; border: 1px solid #999; display:block;padding: 5px;">
-            <code>
+            <code style="color:rgb(11, 11, 127) ;">
                 class Animal{  
                     void eat(){
                         System.out.println("eating...");
@@ -303,33 +303,589 @@
                         Hybrid inheritance is a combination of two or more types of inheritances.
                     </li>
                 </ul>
+
+
+
+
+
+                <!--  Interfaces -->
+
+                <h4>Interfaces</h4>
+                <ul>
+                    <li>
+                        An Interface in java is a blueprint of a class.
+                    </li>
+                    <li>
+                        A java interface contains static constants and abstract methods.
+                    </li>
+                    <li>
+                        It is used to achieve abstraction and multiple inheritance in java.
+                    </li>
+                    <li>
+                        It represents the IS-A relationship.
+                    </li>
+                    <li>
+                        To declare an interface we use the interface Keyword.
+                    </li>
+
+                </ul>
+                <pre style="background-color: #eee; border: 1px solid #999; display:block;padding: 5px;">
+                    <code style="color:rgb(11, 11, 127) ;">
+                       interface AnimalEat {
+                        void eat();
+                       }
+
+                       interface AnimalTravel{
+                        void travel();
+                       }
+                       
+                       class Animal implements AnimalEat,AnimalTravel{
+                        public void eat(){
+                            System.out.print(<span style="color:green;">"Animal is Eating"</span>);
+                        }
+                        public void travel(){
+                            System.out.print(<span style="color:green;">"Animal is Travelling"</span>);
+                        }
+                       }
+                    </code>
+                </pre>
+
+                <!-- Abstractions -->
+                <h4>Abstraction</h4>
+                <ul>
+                    <li>
+                        Abstraction is the concept of object-oriented programming that “shows” only essential attributes
+                        and “hides” unnecessary information.
+                    </li>
+                    <li>
+                        Data abstraction makes complex systems more user-friendly by removing the specifics of the
+                        system mechanics.
+                    </li>
+                    <li>
+                        Your car is a great example of abstraction. You can start a car by turning the key or pressing
+                        the start button. You don't need to know how the engine is getting started, and what all
+                        components your car has. The car's internal implementation and complex logic are completely
+                        hidden from the user.
+                    </li>
+                    <li>
+                        In this example, Bike is an abstract class that contains only one abstract method run. Its
+                        implementation is provided by the Yamaha class.
+                    </li>
+                </ul>
+                <pre style="background-color: #eee; border: 1px solid #999; display:block;padding: 5px;">
+                    <code style="color:rgb(11, 11, 127) ;">
+                       abstract class Bike {
+                        abstract void run();
+                       }
+                       class yamaha extends Bike{
+                        void run(){
+                            System.out.print(<span style="color:green;">"Run Safely"</span>)
+                        }
+                        public static void main(String args[])
+                        {
+                            Bike obj = new yamaha();  <span style="color: purple;"> //creating object</span>
+                            obj.run();
+                        }
+                       } 
+                    </code>
+                </pre>
+
+
+
+
+
+
+                <!-- Encapsulation -->
+                <h4>Encapsulation</h4>
+                <ul>
+                    <li>
+                        Encapsulation refers to the bundling of fields and methods inside a single class.
+
+                    </li>
+                    <li>
+                        It prevents outer classes from accessing and changing the fields and methods of a class.
+                    </li>
+                    <li>
+                        Example: In the example, we have created a class named Area. The main purpose of this class is
+                        to calculate the area.
+                    </li>
+                    <li>
+                        To calculate an area, we need two variables: length and breadth and a method: getArea(). Hence,
+                        we bundled these fields and methods inside a single class.
+                    </li>
+                    <li>
+                        Here, the fields and methods can be accessed from other classes as well. Hence, this is not data
+                        hiding.
+                    </li>
+                    <li>
+                        This is only <b>Encapsulation. </b>
+                    </li>
+                </ul>
+                <pre style="background-color: #eee; border: 1px solid #999; display:block;padding: 5px;">
+                    <code style="color:rgb(11, 11, 127) ;">
+                        class Area {
+
+                            int length;
+                            int breadth;
+                          
+                              Area(int length, int breadth) {
+                              this.length = length;
+                              this.breadth = breadth;
+                            }
+                          
+                             public void getArea() {
+                              int area = length * breadth;
+                              System.out.println(<span style="color:green;">"Area: "</span>+ area);
+                            }
+                          }
+                          class Main {
+                            public static void main(String[] args) {
+                              Area rectangle = new Area(5, 6);
+                              rectangle.getArea();
+                            }
+                          }        
+                    </code>
+                </pre>
+
+
+                <!-- Polymorphism -->
+                <h4>Polymorphism</h4>
+                <ul>
+                    <li>
+                        The word polymorphism is made up of two words “poly” and “morphs” which means may forms.
+                    </li>
+                    <li>
+                        Polymorphism is the ability to display a message in many forms.
+                    </li>
+                </ul>
+                <h5>Types of Polymorphism:</h5>
+                <ol>
+                    <li>Compile-Time Polymorphism</li>
+                    <li>RunTime Polymorphism</li>
+                </ol>
+                <h6>Compile-Time Polymorphism</h6>
+                <ul>
+                    <li>
+                        This is also called static polymorphism.
+                    </li>
+                    <li>
+                        It is checked at compile time.
+                    </li>
+                    <li>
+                        This is achieved by Function Overloading or an Operator Overloading.
+                    </li>
+                </ul>
+                <h6>Runtime Polymorphism</h6>
+                <ul>
+                    <li>
+                        This is also called as Dynamic Polymorphism.
+                    </li>
+                    <li>
+                        It is checked at runtime.
+                    </li>
+                    <li>
+                        It is achieved by method overriding.
+                    </li>
+                </ul>
+
+
+
+
+
+                <!-- constructor -->
+                <h4>Constructor</h4>
+                <ul>
+                    <li>
+                        A constructor in Java is a special method that is used to initialize objects. The constructor is
+                        called when an object of a class is created.
+                    </li>
+                    <li>
+                        For example, suppose there is a class with the name “MyClass”, then when you instantiate this
+                        class, you pass the <br>
+                        <span style="color:rgb(226, 51, 51);">MyClass myClassObject = new MyClass();</span>
+
+                    </li>
+                </ul>
+                <h5>Types of Constructor</h5>
+                <ol>
+                    <li>Default Constructor</li>
+                    <li>Parameterized Constructor</li>
+                    <li>Copy Constructor</li>
+                </ol>
+
+                <h6>Default Constructor</h6>
+                <p>A default constructor is a constructor that either has no parameters, or if it has parameters, all
+                    the parameters have default values.</p>
+                <ul>
+                    <li>
+                        C++: If no user-defined constructor exists for a class A and one is needed, the compiler
+                        implicitly declares a default parameterless constructor A::A().
+                    </li>
+                    <li>
+                        Java: A constructor that is automatically created by the Java compiler if it is not explicitly
+                        defined is called <b>Default Constructor </b>.
+                    </li>
+                </ul>
+
+                <h6>Parameterized Constructor</h6>
+                <p>The constructor's which takes one or more parameters are known as parameterized constructor.</p>
+
+                <pre style="background-color: #eee; border: 1px solid #999; display:block;padding: 5px;">
+                    <code style="color:rgb(11, 11, 127) ;">
+                        class ABC {
+                            String Name;
+                            ABC(name)
+                            {
+                                System.out.print(<span style="color:green;">"Name : "</span> + name);
+                            }
+                            public static void main(String args[]){
+                                <span style="color: purple;"> //calling constructor by passing one parameter</span>
+                                ABC obj = new ABC("Ramesh");
+                            }
+                        }       
+                    </code>
+                </pre>
+
+                <h6>Copy Constructor</h6>
+                <ul>
+                    <li>
+                        Copy Constructor is a type of constructor, whose purpose is to copy an object to another.
+                    </li>
+                    <li>
+                        What it means is that a copy constructor will clone an object and its values, into another
+                        object, given that both the objects are of the same class.
+                    </li>
+                </ul>
+
+                <pre style="background-color: #eee; border: 1px solid #999; display:block;padding: 5px;">
+                    <code style="color:rgb(11, 11, 127) ;">
+                        class ABC
+                        {
+                            int x;
+                                
+                            ABC(int y)
+                            {
+                                x = y;
+                            }
+                            <span style="color: purple;"> // Copy constructor</span>
+                            ABC(ABC abc)
+                            {
+                                x = abc.x;
+                            }
+                        }
+       
+                    </code>
+                </pre>
+                <h4>Destructors</h4>
+                <ul>
+                    <li>
+                        <b> Constructors</b> initialize objects and allocate spaces for them.
+                    </li>
+                    <li>
+                        <b>Destructors </b>are also special methods.
+                    </li>
+                    <li>
+                        Destructors free up the resources and memory occupied by an object.
+                    </li>
+                    <li>
+                        Destructors are automatically called when an object is being destroyed.
+                    </li>
+                    <li>
+                        It is invoked automatically when the object goes out of scope or is explicitly destroyed by a
+                        call to delete
+                    </li>
+                    <li>
+                        A <b>destructor</b> has the same name as the class, preceded by a tilde <b>( ~ ) </b>.
+                    </li>
+                </ul>
+
+
+                <!-- Access Specifer -->
+                <h4>Access Specifier</h4>
+                <p>As the name suggests access modifiers in helps to restrict the scope of a class, constructor,
+                    variable,method,data member.</p>
+
+                <h5>Types of access specifier:</h5>
+                <ol>
+                    <li>
+                        Default
+                    </li>
+                    <li>Private</li>
+                    <li>Protected</li>
+                    <li>Public</li>
+                </ol>
+
+                <h6>Default</h6>
+                <p>When no access specifier is specified it is said to be having a default access modifier by default.
+                    They are accessible only within the same package.
+                </p>
+
+                <h6>Private</h6>
+                <ul>
+                    <li>
+                        It is declared using a private keyword.
+                    </li>
+                    <li>
+                        The methods or data members declared as private are accessible only within the class in which
+                        they are declared.
+                    </li>
+                    <li>
+                        Any other class of the same package will not be able to access these members.
+                    </li>
+                    <li>
+                        Top-level classes or interfaces can not be declared as private because:
+                        <ol type="a">
+                            <li>
+                                Private means “only visible within the enclosing class”.
+                            </li>
+                            <li>
+                                Protected means “only visible within the enclosing class and any subclasses".
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+
+                <h6>Protected</h6>
+                <ul>
+                    <li>
+                        It is declared using a <b>protected </b> keyword.
+                    </li>
+                    <li>
+                        They are accessible within the same package or subclasses in different packages.
+                    </li>
+                </ul>
+
+                <h6>Public</h6>
+                <ul>
+                    <li>
+                        The public access modifier is specified using the keyword public.
+                    </li>
+                    <li>
+                        It has the widest Scope among all other access modifiers.
+                    </li>
+                    <li>
+                        Classes,methods or data members declared with public are accessible from anywhere in the
+                        program.
+                    </li>
+                    <li>
+                        Avoid public field except for constants.
+                    </li>
+                </ul>
+
+                <!-- Exception  -->
+
+                <h4>Exception</h4>
+                <ul>
+                    <li>
+                        An <b> exception</b> is an event, which occurs during the execution of a program, that <b>
+                            disrupts</b>
+                        the
+                        normal flow of the program's instructions.
+                    </li>
+                    <li>
+                        Exceptions can be caught and handled by the program.
+                    </li>
+                    <li>
+                        When an <b> exception</b> occurs within a method, it creates an object. This object is called
+                        the
+                        exception object.Which contains details of <b> exception</b>.
+                    </li>
+                </ul>
+
+                <!--  Exception Handeling -->
+                <h4>Exception Handling</h4>
+                <p> <b> Exception Handling</b> is a mechanism to handle runtime errors such as
+                    ClassNotFoundException, IOException, SQLException, RemoteException, etc.
+                </p>
+
+
+                <ol>
+                    <li><b>Try:</b> The "try" keyword is used to specify a block where we should place an exception
+                        code.
+                        It means we can't use try block alone. The try block must be followed by either <b>catch</b> or
+                        <b>finally</b>
+                    </li>
+                    <li>
+                        <b>Catch:</b> The "catch" block is used to handle the exception. It must be preceded by try
+                        block
+                        which means we can't use catch block alone. It can be followed by <b>finally</b> block later.
+                    </li>
+                    <li>
+                        <b>Finally: </b> The "finally" block is used to execute the necessary code of the program. It is
+                        executed whether an exception is handled or not.
+                    </li>
+                    <li>
+                        <b>Throw:</b> The "throw" keyword is used to throw an exception.
+                    </li>
+                    <li>
+                        <b> Throws:</b> The "throws" keyword is used to declare exceptions. It specifies that there may
+                        occur an exception in the method. It doesn't throw an exception. It is always used with method
+                        signature.
+                    </li>
+                </ol>
+
+                <pre style="background-color: #eee; border: 1px solid #999; display:block;padding: 5px;">
+                    <code style="color:rgb(11, 11, 127) ;">
+                        public class JavaExceptionExample
+                        {  
+                            public static void main(String args[])
+                            {  
+                             try{  
+                                <span style="color:purple;">//code that may raise exception</span>  
+                                int data=100/0;  
+                                }
+                                catch(ArithmeticException e)
+                                {
+                                    System.out.println(<span style="color:green;">e</span>);
+                                }  
+                                <span style="color:purple;">//rest code of the program   </span> 
+                             System.out.println(<span style="color:green;">"rest of the code..."</span>);  
+                            }  
+                          }
+                          
+                    </code>
+                </pre>
+
+
+                <!-- Garbage Collection -->
+                <h4>Garbage Collection</h4>
+                <ul>
+                    <li>
+                        Garbage collection is a memory management technique.
+                    </li>
+                    <li>
+                        In C/C++ programmers are responsible for both memory creation and destruction.
+                    </li>
+                    <li>
+                        In java the programmer need not to worry about objects which are no longer used.
+                    </li>
+                    <span style="color:purple;">// How <b>Garbage Collection</b> works </span>
+                    <li>
+                        Objects are created on heaps which allocate memory to the program.
+                    </li>
+                    <li>
+                        Some objects will no longer be needed, garbage collectors find these objects and delete them to
+                        free up memory.
+                    </li>
+                    <li>
+                        In C/C++ if a programmer forgets to delete the object after some time it will cause
+                        OutOfMemoryErrors.
+                    </li>
+
+                </ul>
+
+
+
+
+                <!-- Threads -->
+
+                <!-- Overloading and Overriding -->
+                <h4>Overloading</h4>
+                <ul>
+                    <li>
+                        When two or more methods have same name but different parameters then it is called method <b>
+                            overloading</b>.
+                    </li>
+                    <li>
+                        Parameters may differ in number or type of input parameter or both.
+                    </li>
+                    <li>
+                        <b> Overloading</b> is related to Compile-Time Polymorphism.
+                    </li>
+                </ul>
+
+                <pre style="background-color: #eee; border: 1px solid #999; display:block;padding: 5px;">
+                    <code style="color:rgb(11, 11, 127) ;">
+                        public class Area {
+                            <span style="color:purple;">// Overloaded area() with no parameter.</span>
+                            public int area()
+                            {
+                                int x=10,y=5;
+                                return (x * y);
+                            }
+                            <span style="color:purple;">// Overloaded area() with two int parameters</span>
+                            public int area(int x,int y)
+                            {
+                                return (x * y);
+                            }
+                            <span style="color:purple;">// Overloaded area() with two double parameters</span>
+                            public double area(double x,double y)
+                            {
+                                return (x * y);
+                            }
+
+                            public static void main(String args[])
+                            {
+                                Area a = new Area();
+                                System.out.println(<span style="color:green;">a.area()</span>);
+                                System.out.println(<span style="color:green;">a.area(12,15)</span>);
+                                System.out.println(<span style="color:green;">a.area(10.5,12.2)</span>);
+                            }
+
+                        } 
+                    </code>
+                </pre>
+
+                <h4>Overriding</h4>
+                <ul>
+                    <li>
+                        If subclass (child class) has the same method as declared in the parent class, it is known as
+                        <b> method overriding in Java </b>.
+                    </li>
+                    <li>
+                        Overriding is the ability to define a behavior that's specific to the subclass type, which means
+                        a subclass can implement a parent class method based on its requirement.
+                    </li>
+                    <li>
+                        With <b>method overriding</b> we can achieve <b> Runtime Polymorphism</b>.
+                    </li>
+                    <li>
+                        Requirements for overriding:
+                        <ol>
+                            <li>
+                                The method must have the same name as in the parent class.
+                            </li>
+                            <li>
+                                The method must have the same parameter as in the parent class.
+                            </li>
+                            <li>
+                                There must be an IS-A relationship (inheritance).
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <pre style="background-color: #eee; border: 1px solid #999; display:block;padding: 5px;">
+                    <code style="color:rgb(11, 11, 127) ;">
+                        class Vehicle{  
+                                <span style="color:purple;">//defining a method</span>  
+                                void run() 
+                                {
+                                    System.out.println(<span style="color:green;">"Vehicle is running"</span>);
+                                }  
+                            }  
+                            <span style="color:purple;">//Creating a child class</span>                          
+                          class Bike2 extends Vehicle
+                            {  
+                                <span style="color:purple;">//defining the same method as in the parent class</span>                              
+                            void run()
+                                {
+                                    System.out.println(<span style="color:green;">"Bike is running safely"</span>);
+                                }  
+                            
+                            public static void main(String args[])
+                                {
+
+                                    Bike2 obj = new Bike2();<span style="color:purple;">//creating object</span>  
+                                    obj.run();<span style="color:purple;">//calling method</span> 
+                                }  
+                            }
+                          
+                    </code>
+                </pre>
+
+
+            </section>
         </div>
-
-
-
-
-        <!--  Interfaces -->
-
-        <!-- Abstractions -->
-
-        <!-- Encapsulation -->
-
-        <!-- Polymorphism -->
-
-        <!-- constructor -->
-
-        <!-- Access Specifer -->
-
-        <!-- Exception  -->
-
-        <!-- Garbage Collection -->
-
-        <!-- Threads -->
-
-        <!-- Overloading and Overriding -->
-
-
-        </section>
     </div>
 
 </body>
